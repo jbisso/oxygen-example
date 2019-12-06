@@ -2,10 +2,11 @@ Oxygen example
 ==============
 
 We are trying to get our build system to work with the new Oxygen WebHelp
-plug-in. We are using the new page templates, and have added a call to
+plug-in (Version: 21.1, Build: 2019101509) using the new page templates, and have added a call to
 our require.js module(s). Although we can access the jQuery module, we
 cannot access the jquery-ui module. (We are creating some modal dialogs
-to show tables with syntax information for the users.)
+to show tables with syntax information for the users.) These dialogs worked with the previous 
+version of Oxygen WebHelp.
 
 I have factored out all extraneous stuff on our end. We have assets that are
 not in the oxygen-webhelp dirs of each document (we have quite a few docs, and
@@ -40,6 +41,6 @@ Building document
 
         URL: http://localhost/out
 
-    6. Open the Javascript/Web Console in your browser to see the error about the error in findModals.
+    6. Open the Javascript/Web Console in your browser to see the error about the error in findModals:
 
         findModals error: $(...).dialog is not a function
