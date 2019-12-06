@@ -9,5 +9,41 @@
       laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
       voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
       non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <table frame="all" rowsep="1" colsep="1" id="syntaxlegend" outputclass="legend">
+      <tgroup cols="3">
+        <colspec colname="c1" colnum="1" colwidth="1*"/>
+        <colspec colname="c2" colnum="2" colwidth="1*"/>
+        <colspec colname="c3" colnum="3" colwidth="1*"/>
+        <thead>
+          <row>
+            <entry>A</entry>
+            <entry>B</entry>
+            <entry>C</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Lorem</entry>
+            <entry>Lorem</entry>
+            <entry>Lorem</entry>
+          </row>
+          <row>
+            <entry>ipsum</entry>
+            <entry>ipsum</entry>
+            <entry>ipsum</entry>
+          </row>
+          <row>
+            <entry>dolor</entry>
+            <entry>dolor</entry>
+            <entry>dolor</entry>
+          </row>
+          <row>
+            <entry>sit</entry>
+            <entry>sit</entry>
+            <entry>sit</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
   </body>
 </topic>
