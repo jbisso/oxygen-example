@@ -22,6 +22,12 @@
             </fileset>
         </resources>
         
+        <html-page-layout-files>
+            <page-layout-file page="main" file="page-templates/wt_index.html"/>
+            <page-layout-file page="search" file="page-templates/wt_search.html"/>
+            <page-layout-file page="topic" file="page-templates/wt_topic.html"/>
+            <page-layout-file page="index-terms" file="page-templates/wt_terms.html"/>
+        </html-page-layout-files>
         <parameters>
             <parameter name="webhelp.show.main.page.tiles" value="no"/>
             <parameter name="webhelp.show.main.page.toc" value="yes"/>
