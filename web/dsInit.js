@@ -16,6 +16,19 @@ define(modules, function() {
         console.log("dsInit() called");
         findModals();
     }
+    
+    // Create image popups using jquery.fancybox.min.js
+    function createImagePopups() {
+        // for filepath popups
+        $('.open-popup-link').fancybox({
+            touch : 'false'
+        });
+        // for search tip popups
+        $('.ajax-popup-link').fancybox({
+            type : 'ajax'
+        });
+    }
+    
     // process modal dialog output
     function findModals() {
         console.log("findModals() called");

@@ -8,10 +8,13 @@ cannot access the jquery-ui module. (We are creating some modal dialogs
 to show tables with syntax information for the users.) These dialogs worked with the previous 
 version of Oxygen WebHelp.
 
-I have factored out all extraneous stuff on our end. We have assets that are
-not in the oxygen-webhelp dirs of each document (we have quite a few docs, and
-this allows us to update assets (css overrides, Javascript, etc.) without
-having to rebuild the entire doc set.
+This small project basically loads our pared down module (dsInit.js) at the bottom of the
+wt_topic.html template. Our production dsInit.js module has more functionality and more 
+initialization code in it.
+
+We have assets that are not in the oxygen-webhelp dirs of each document (we have
+quite a few docs, and this allows us to update assets (css overrides, Javascript,
+etc.) without having to rebuild the entire doc set.
 
 Prerequisites
 -------------
@@ -37,9 +40,9 @@ Building document
 
     4. cp -r out $WEB_DOCS_ROOT
 
-    5. Open document in browser:
+    5. Open the topic with calls to the code for the document in browser:
 
-        URL: http://localhost/out
+        URL: http://localhost/out/topics/firstTopic.html
 
     6. Open the Javascript/Web Console in your browser to see the error about the error in findModals:
 
